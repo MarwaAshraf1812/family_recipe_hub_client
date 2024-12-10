@@ -34,7 +34,7 @@ function Register() {
             <img src={Auth2} alt="Auth2" className='w-full object-cover h-[100vh]' />
             <div className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[400px] h-auto px-5 py-8 rounded-md bg-white z-50 shadow-lg'>
                 <h2 className='text-[38px] font-bold mb-5 text-center'>
-                    <span className='text-orange-500' style={{ fontFamily: 'Yesteryear' }}>R</span>egister
+                    <span className='text-green-800' style={{ fontFamily: 'Yesteryear' }}>R</span>egister
                 </h2>
                 <form onSubmit={handleSubmit} className='flex flex-col'>
                     <div className='mb-4 relative'>
@@ -48,7 +48,7 @@ function Register() {
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required
-                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-orange-500 transition-all'
+                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-green-800 transition-all'
                             />
                         </div>
                     </div>
@@ -63,7 +63,7 @@ function Register() {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
-                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-orange-500 transition-all'
+                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-green-800 transition-all'
                             />
                         </div>
                     </div>
@@ -78,7 +78,7 @@ function Register() {
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
-                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-orange-500 transition-all'
+                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-green-800 transition-all'
                             />
                         </div>
                     </div>
@@ -93,7 +93,7 @@ function Register() {
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                                 required
-                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-orange-500 transition-all'
+                                className='w-full pl-10 p-3 rounded-md border-2 focus:outline-none focus:border-green-800transition-all'
                             />
                         </div>
                     </div>
@@ -102,7 +102,7 @@ function Register() {
                             type="submit"
                             onMouseEnter={handleHover}
                             onMouseLeave={handleHover}
-                            className='w-[55%] p-2 rounded-md text-white font-bold text-xl bg-orange-500 border-2 hover:border-orange-500 hover:text-orange-500 hover:bg-white transition-all duration-300 ease-in-out'
+                            className='w-[55%] p-2 rounded-md text-white font-bold text-xl bg-green-800 border-2 hover:border-green-800 hover:text-green-800 hover:bg-white transition-all duration-300 ease-in-out'
                         >
                             Register
                         </button>
