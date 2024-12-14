@@ -18,6 +18,16 @@
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    "react-icons": "^5.4.0",
+    "react-router-dom": "^6.28.0",
+    "swiper": "^11.1.15",
+>>>>>>> Stashed changes
+=======
+    "swiper": "^11.1.15",
+>>>>>>> Stashed changes
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
