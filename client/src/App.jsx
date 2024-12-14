@@ -1,9 +1,13 @@
-import { Button } from './components/ui/button';
+
+import Navbar from './components/layout/Navbar/Navbar';
+import Landing from './Pages/Landing';
+import './App.css';
 
 export default function App() {
   return (
-    <div>
-      <Button>Click Me</Button>
-    </div>
+    <>
+    <Navbar />
+    <Landing/>
+    </>
   );
 }

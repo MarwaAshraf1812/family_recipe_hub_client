@@ -9,7 +9,12 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-  		colors: {}
+  		colors: {
+				main_color: '#E7FAFE'
+			},
+			fontFamily: {
+        lobster: ['Lobster', 'cursive'],
+      },
   	}
   },
   plugins: [import('tailwindcss-animate')],
