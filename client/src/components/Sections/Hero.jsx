@@ -82,7 +82,7 @@ export default function Hero() {
               <div className="md:w-1/2 h-full bg-main_color flex items-center p-5 md:p-10 relative group">
                 <div className="flex flex-col w-full">
                   <div
-                    className="flex bg-white px-4 rounded-full py-2 items-center absolute top-6 left-6 
+                    className="flex bg-white px-4 rounded-xl py-2 items-center absolute top-6 left-6 
                     transform transition-transform duration-500 group-hover:scale-110"
                   >
                     <img
