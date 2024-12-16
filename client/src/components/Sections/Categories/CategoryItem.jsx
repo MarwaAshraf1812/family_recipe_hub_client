@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function CategoryItem({ image, title, bgColor }) {
   return (
     <div
-      className={`w-36  rounded-xl mt-10 mx-auto p-4 flex flex-col items-center relative  ${bgColor} shadow-sm transition duration-500 hover:scale-110 cursor-pointer`}
+      className={`w-36  rounded-xl mt-10 mb-10 mx-auto p-4 flex flex-col items-center relative  ${bgColor} shadow-sm transition duration-500 hover:scale-110 cursor-pointer`}
     >
       <div className="w-20 relative">
         <img
