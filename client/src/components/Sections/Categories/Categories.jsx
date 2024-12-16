@@ -18,14 +18,14 @@ export default function Categories() {
   ];
 
   return (
-    <div className="w-full h-full py-16 px-10 md:px-14">
+    <div className="w-full h-full py-16 px-4 lg:px-20">
       <div className="flex justify-between items-center mb-10 md:mb-14 w-full">
         <h1 className="text-4xl font-bold text-black md:text-5xl">Categories</h1>
         <Link to="/categories" className="text-black hover:bg-main_color shadow-md bg-main_color p-4 rounded-lg font-semibold">
           View All Categories
         </Link>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 w-full">
         {categories.map((category, index) => (
           <CategoryItem
             key={index}
