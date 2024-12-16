@@ -121,7 +121,7 @@ export default function Hero() {
                         <p className="text-gray-500 text-xs">{slide.author.date}</p>
                       </div>
                     </div>
-                    <button className="bg-black text-white px-6 py-3 md:px-9 md:py-5 rounded-3xl font-medium text-sm md:text-lg flex items-center hover:bg-black/80">
+                    <button className="bg-black text-white px-6 py-3 md:px-9 md:py-3 rounded-xl font-medium text-sm md:text-lg flex items-center hover:bg-black/80">
                       Recipes
                       <div className="rounded-3xl ml-2 md:ml-4">
                         <RiVideoFill />
