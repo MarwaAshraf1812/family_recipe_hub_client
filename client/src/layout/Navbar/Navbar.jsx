@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <div className='border-b border-gray-300'>
-      <div className="container mx-auto py-5 px-5">
+      <div className="mx-auto py-5 lg:px-14 md:px-10 px-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center text-2xl font-lobster text-gray-800">
             Family <span className="text-green-600">Recipe</span> Hub

@@ -4,10 +4,13 @@ import PostsSection from '../components/Sections/PostsSection'
 import LatestRecipes from '../components/Sections/LatestRecipes'
 import Contact from '../components/Sections/Contact'
 import Footer from '../layout/Footer/Footer'
+import Categories from "../components/Sections/Categories/Categories";
+
 export default function Landing() {
   return (
     <div>
       <Hero />
+      <Categories />
       <ChefSection />
       <PostsSection /> 
       <LatestRecipes />
@@ -16,3 +19,4 @@ export default function Landing() {
     </div>
   )
 }
+

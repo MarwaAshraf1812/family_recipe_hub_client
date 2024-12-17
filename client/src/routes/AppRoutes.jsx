@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from '../App'
 import Login from '../Pages/Auth/Login'
 import Register from '../Pages/Auth/Register'
+import CategoriesPage from '../Pages/Categories/CaregoriesPage'
 
 const Router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const Router = createBrowserRouter([
     path: '/register',
     element:<Register/> ,
   },
+  {
+    path: '/categories',
+    element: <CategoriesPage />,
+  }
 ])
 
 const AppRouters = () => {
