@@ -4,6 +4,7 @@ import App from '../App'
 import Login from '../Pages/Auth/Login'
 import Register from '../Pages/Auth/Register'
 import CategoriesPage from '../Pages/Categories/CaregoriesPage'
+import BlogList  from '../Pages/BlogList';
 
 const Router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const Router = createBrowserRouter([
   {
     path: '/categories',
     element: <CategoriesPage />,
+  },
+  {
+    path: '/blog',
+    element: <BlogList />,
   }
 ])
 
