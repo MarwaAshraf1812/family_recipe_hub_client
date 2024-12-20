@@ -1,12 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { SearchProvider } from './context/SearchContext'
 import './index.css'
 import AppRouters from './routes/AppRoutes'
-import { ThemeProvider } from "@material-tailwind/react";
+import { ThemeProvider } from '@material-tailwind/react'
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <ThemeProvider>
+  <SearchProvider>
+    <StrictMode>
+      <ThemeProvider>
         <AppRouters />
-    </ThemeProvider>
-  </StrictMode>
+      </ThemeProvider>
+    </StrictMode>
+  </SearchProvider>
 )
