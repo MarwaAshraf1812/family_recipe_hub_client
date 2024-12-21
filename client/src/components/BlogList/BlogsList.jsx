@@ -13,6 +13,7 @@ function BlogsList() {
     {filteredBlogs.map((blog) => (
           <BlogCard
             key={blog.id}
+            id={blog.id}
             image={blog.image}
             title={blog.name}
             description={blog.description}

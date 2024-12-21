@@ -1,10 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from '../App'
-import Login from '../Pages/Auth/Login'
-import Register from '../Pages/Auth/Register'
-import CategoriesPage from '../Pages/Categories/CaregoriesPage'
-import BlogList  from '../Pages/BlogList';
-import Recipies from '../Pages/Recipes'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import App from '../App';
+import Login from '../Pages/Auth/Login';
+import Register from '../Pages/Auth/Register';
+import CategoriesPage from '../Pages/Categories/CaregoriesPage';
+import BlogList from '../Pages/BlogList';
+import BlogDetails from '../Pages/BlogDetails';
+import Recipies from '../Pages/Recipes';
 
 const Router = createBrowserRouter([
   {
@@ -13,11 +14,11 @@ const Router = createBrowserRouter([
   },
   {
     path: '/login',
-    element:<Login/> ,
+    element: <Login />,
   },
   {
     path: '/register',
-    element:<Register/> ,
+    element: <Register />,
   },
   {
     path: '/categories',
@@ -38,11 +39,15 @@ const Router = createBrowserRouter([
   {
     path: '/blog',
     element: <BlogList />,
-  }
-])
+  },
+  {
+    path: '/blog/blogDetails/:id',
+    element: <BlogDetails />,
+  },
+]);
 
 const AppRouters = () => {
-  return <RouterProvider router={Router} />
-}
+  return <RouterProvider router={Router} />;
+};
 
-export default AppRouters
+export default AppRouters;
