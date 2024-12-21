@@ -10,6 +10,7 @@ import HomeImg3 from '../../assets/home3.avif';
 import HomeImg4 from '../../assets/home4.avif';
 import HomeImg2 from '../../assets/home2.png';
 import UserImg1 from '../../assets/user1.png';
+import { Link } from 'react-router-dom'
 
 const slideData = [
   {
@@ -121,12 +122,12 @@ export default function Hero() {
                         <p className="text-gray-500 text-xs">{slide.author.date}</p>
                       </div>
                     </div>
-                    <button className="bg-black text-white px-6 py-3 md:px-9 md:py-3 rounded-xl font-medium text-sm md:text-lg flex items-center hover:bg-black/80">
+                    <Link to={'/recipes'} className="bg-black text-white px-6 py-3 md:px-9 md:py-3 rounded-xl font-medium text-sm md:text-lg flex items-center hover:bg-black/80">
                       Recipes
                       <div className="rounded-3xl ml-2 md:ml-4">
                         <RiVideoFill />
                       </div>
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
