@@ -1,4 +1,4 @@
-import ChefImage from '../../assets/chef.png';
+import ChefImage from '../../assets/Chef.png';
 import tomato from '../../assets/tomato.png';
 import lettuce from '../../assets/lettuce.png';
 import onion from '../../assets/onion.png';

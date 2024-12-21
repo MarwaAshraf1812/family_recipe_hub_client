@@ -1,9 +1,9 @@
 import { Button } from "../ui/button";
 import { FaInstagram } from "react-icons/fa";
-import post1 from "../../assets/Posts/post1.png";
-import post2 from "../../assets/Posts/post2.png";
-import post3 from "../../assets/Posts/post3.png";
-import post4 from "../../assets/Posts/post4.png";
+import post1 from "../../assets/Posts/Post1.png";
+import post2 from "../../assets/Posts/Post2.png";
+import post3 from "../../assets/Posts/Post3.png";
+import post4 from "../../assets/Posts/Post4.png";
 import WebFont from 'webfontloader'
 import {  useEffect } from 'react'
 export default function PostsSection() {

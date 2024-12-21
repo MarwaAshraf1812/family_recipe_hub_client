@@ -1,4 +1,4 @@
-import ContactImage from '../../assets/contact.png'
+import ContactImage from '../../assets/Contact.png'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 
