@@ -8,6 +8,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from '@/components/ui/pagination'
+import { Link } from 'react-router-dom'
 
 function RecipesList({ recipes }) {
   return (
@@ -26,9 +27,11 @@ function RecipesList({ recipes }) {
                   alt={recipe.title}
                   className="lg:w-24 lg:h-24 md:w-20 md:h-20 w-16 h-16 object-cover rounded-full"
                 />
-                <h3 className="text-md font-bold ms-8 hover:text-green-400 cursor-pointer transition duration-700 ease-in-out">
-                  {recipe.title}
-                </h3>
+                <Link to={`/recipes/${recipe.id}`}>
+                  <h3 className="text-md font-bold ms-8 hover:text-green-400 cursor-pointer transition duration-700 ease-in-out">
+                    {recipe.title}
+                  </h3>
+                </Link>
               </div>
             ))}
           </div>

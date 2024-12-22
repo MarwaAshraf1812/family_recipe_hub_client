@@ -1,11 +1,12 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import App from '../App';
-import Login from '../Pages/Auth/Login';
-import Register from '../Pages/Auth/Register';
-import CategoriesPage from '../Pages/Categories/CaregoriesPage';
-import BlogList from '../Pages/BlogList';
-import BlogDetails from '../Pages/BlogDetails';
-import Recipies from '../Pages/Recipes';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import App from '../App'
+import Login from '../Pages/Auth/Login'
+import Register from '../Pages/Auth/Register'
+import BlogList  from '../Pages/BlogList';
+import Recipies from '../Pages/Recipes'
+import CategoriesPage from '../Pages/CaregoriesPage';
+import RecipeDetails from '../Pages/RecipeDetail';
+
 
 const Router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const Router = createBrowserRouter([
   },
   {
     path: '/recipes/:id',
-    element: <CategoriesPage />,
+    element: <RecipeDetails />,
   },
   {
     path: '/blog',
