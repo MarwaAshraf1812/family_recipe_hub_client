@@ -14,7 +14,7 @@ The goal is to build a beautiful, responsive, and user-friendly platform to cele
 ## Tech Stack
 - **Framework**: React.js
 - **Routing**: React Router
-- **Styling**: Tailwind CSS
+- **Styling**: Tailwind CSS, Shadcn
 - **Icons**: React Icons
 - **Forms**: Custom reusable form components
 - **State Management**: React Context API
