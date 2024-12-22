@@ -7,6 +7,7 @@ import Recipies from '../Pages/Recipes'
 import CategoriesPage from '../Pages/CaregoriesPage';
 import RecipeDetails from '../Pages/RecipeDetail';
 
+
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -14,11 +15,11 @@ const Router = createBrowserRouter([
   },
   {
     path: '/login',
-    element:<Login/> ,
+    element: <Login />,
   },
   {
     path: '/register',
-    element:<Register/> ,
+    element: <Register />,
   },
   {
     path: '/categories',
@@ -39,11 +40,15 @@ const Router = createBrowserRouter([
   {
     path: '/blog',
     element: <BlogList />,
-  }
-])
+  },
+  {
+    path: '/blog/blogDetails/:id',
+    element: <BlogDetails />,
+  },
+]);
 
 const AppRouters = () => {
-  return <RouterProvider router={Router} />
-}
+  return <RouterProvider router={Router} />;
+};
 
-export default AppRouters
+export default AppRouters;

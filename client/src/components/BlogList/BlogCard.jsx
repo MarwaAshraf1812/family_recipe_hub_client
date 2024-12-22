@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
-
-export default function BlogCard({ image, title, description, author, date, authorImage }) {
+import { useNavigate  } from 'react-router-dom';
+export default function BlogCard({ image, title, description, author, date, authorImage , id }) {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate(`/blog/blogDetails/${id}`);
+  };
   return (
-    <div className="flex flex-col md:flex-row gap-6 p-4 md:p-6 md:max-w-[57rem] w-full md:mx-auto mx-0 items-start rounded-lg">
+    <div  onClick={handleClick} className="flex flex-col md:flex-row gap-6 p-4 md:p-6 md:max-w-[57rem] w-full md:mx-auto mx-0 items-start rounded-lg  cursor-pointer">
       <img
         src={image}
         alt="Blog Thumbnail"
@@ -36,4 +40,5 @@ BlogCard.propTypes = {
   author: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   authorImage: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired
 };
