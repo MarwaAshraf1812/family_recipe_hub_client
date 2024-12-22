@@ -1,12 +1,17 @@
-import Landing from './Pages/Landing';
-import './App.css';
-import Navbar from './layout/Navbar/Navbar';
+import { Outlet } from 'react-router-dom'
+import Navbar from './layout/Navbar/Navbar'
+import Footer from './layout/Footer/Footer'
 
-export default function App() {
+function App() {
   return (
-    <>
-    <Navbar />
-    <Landing/>
-    </>
-  );
+    <div>
+      <Navbar />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  )
 }
+
+export default App

@@ -1,5 +1,3 @@
-import Navbar from '../layout/Navbar/Navbar'
-import Footer from '../layout/Footer/Footer'
 import Contact from '../components/Sections/Contact'
 import BlogsList from '../components/BlogList/BlogsList'
 import TastyList from '../components/BlogList/TastyList'
@@ -9,7 +7,6 @@ import DynamicHeader from '../components/BlogList/DynamicHeader'
 export default function BlogList() {
   return (
     <>
-      <Navbar />
       <DynamicHeader
         title="Blog & Articles"
         description="Explore our latest blogs and insights."
@@ -27,7 +24,6 @@ export default function BlogList() {
         </div>
       </div>
       <Contact />
-      <Footer />
     </>
   )
 }
