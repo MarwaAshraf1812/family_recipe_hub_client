@@ -3,7 +3,6 @@ import ChefSection from '../components/Sections/ChefSection'
 import PostsSection from '../components/Sections/PostsSection'
 import LatestRecipes from '../components/Sections/LatestRecipes'
 import Contact from '../components/Sections/Contact'
-import Footer from '../layout/Footer/Footer'
 import Categories from "../components/Sections/Categories/Categories";
 
 export default function Landing() {
@@ -15,7 +14,6 @@ export default function Landing() {
       <PostsSection /> 
       <LatestRecipes />
       <Contact />
-      <Footer />
     </div>
   )
 }

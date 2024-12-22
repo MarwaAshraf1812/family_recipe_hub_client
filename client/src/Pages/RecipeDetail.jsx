@@ -3,14 +3,13 @@ import { recipes } from '../DummyData/Recipes'
 import { useState } from 'react'
 import ChefImage from '../assets/Chef.png'
 import Contact from '../components/Sections/Contact'
-import Footer from '../layout/Footer/Footer'
-import Navbar from '../layout/Navbar/Navbar'
 import RecipeImage from '../components/common/Recipes/RecipeImage'
 import NutritionInfo from '../components/common/Recipes/NutritionInfo'
 import IngredientsList from '../components/common/Recipes/IngredientsList'
 import InstructionsList from '../components/common/Recipes/InstructionsList'
 import RecipeHeader from '../components/common/Recipes/RecipeHeader'
 import { MdArrowBack } from 'react-icons/md'
+import CheckOut from '../components/BlogDetails/CheckOut'
 
 export default function RecipeDetails() {
   const { id } = useParams()
@@ -39,7 +38,6 @@ export default function RecipeDetails() {
 
   return (
     <>
-      <Navbar />
       <div className="py-6 mx-auto w-full px-10 lg:px-24">
         <div className="w-full lg:px-4">
           <div className="mb-12">
@@ -102,7 +100,7 @@ export default function RecipeDetails() {
         </div>
       </div>
       <Contact />
-      <Footer />
+      <CheckOut />
     </>
   )
 }
