@@ -1,3 +1,5 @@
+
+import Footer from '../layout/Footer/Footer'
 import Contact from '../components/Sections/Contact'
 import BlogsList from '../components/BlogList/BlogsList'
 import TastyList from '../components/BlogList/TastyList'
@@ -7,10 +9,12 @@ import DynamicHeader from '../components/BlogList/DynamicHeader'
 export default function BlogList() {
   return (
     <>
+      
       <DynamicHeader
         title="Blog & Articles"
         description="Explore our latest blogs and insights."
         placeholder="Search articles, news, or posts..."
+        page="blog"
       />
       <div className="flex flex-col xl:flex-row gap-6 mt-6 px-4">
         <div className="flex-1">
@@ -24,6 +28,7 @@ export default function BlogList() {
         </div>
       </div>
       <Contact />
+      <Footer />
     </>
   )
 }

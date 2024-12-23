@@ -9,7 +9,7 @@ import RecipeDetails from '../Pages/RecipeDetail'
 import ContactUs from '../Pages/ContactUs/ContactUs'
 import Landing from '../Pages/Landing'
 import AboutUs from '../Pages/AboutUs'
-
+import BlogDetails from '../Pages/BlogDetails';
 const Router = createBrowserRouter([
   {
     path: '/',
@@ -54,6 +54,10 @@ const Router = createBrowserRouter([
       {
         path: '/contact',
         element: <ContactUs />,
+      },
+      {
+        path: '/blog/blogDetail/:id',
+        element: <BlogDetails />,
       },
     ],
   },

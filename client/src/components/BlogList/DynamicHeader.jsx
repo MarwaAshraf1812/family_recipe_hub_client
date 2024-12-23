@@ -3,8 +3,8 @@ import { Button } from '../ui/button';
 import PropTypes from 'prop-types';
 import { useSearch } from '../../context/SearchContext';
 
-export default function DynamicHeader({ title, description, placeholder }) {
-  const { search, setSearch, SearchFun } = useSearch();
+export default function DynamicHeader({ title, description, placeholder, page}) {
+  const { search, setSearch, SearchFun } = useSearch(page);
 
   const handleSearch = () => {
     SearchFun();
@@ -44,9 +44,10 @@ DynamicHeader.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   placeholder: PropTypes.string,
+  page: PropTypes.string.isRequired,
 };
 
 DynamicHeader.defaultProps = {
   description: 'Find the best articles, recipes, and more.',
-  placeholder: 'Search here...'
+  placeholder: 'Search here...',
 };
