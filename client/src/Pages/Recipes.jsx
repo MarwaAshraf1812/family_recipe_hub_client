@@ -14,6 +14,7 @@ export default function Recipies() {
         title="Recipes & Cuisine"
         description="Discover delicious recipes from around the world."
         placeholder="Search recipes or ingredients..."
+        page="recipesPage"
       />
       <RecipesList
         recipes = {recipes}

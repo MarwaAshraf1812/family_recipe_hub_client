@@ -9,7 +9,7 @@ export default function ChefSection() {
   return (
     <div className="w-[85%] mx-auto mt-11 flex flex-col lg:flex-row items-center justify-between bg-white px-6 py-12 md:px-12 md:py-16">
       <div className="max-w-md text-center md:text-left lg:mb-0 mb-11">
-        <h1 className="text-4xl md:text-5xl  font-bold text-gray-900 mb-4">
+        <h1 className="text-3xl md:text-5xl  font-bold text-gray-900 mb-4">
           Everyone can be a <br /> chef in their own kitchen
         </h1>
         <p className="text-lg text-gray-600 mb-6">

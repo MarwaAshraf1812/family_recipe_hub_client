@@ -3,7 +3,7 @@ import { useNavigate  } from 'react-router-dom';
 export default function BlogCard({ image, title, description, author, date, authorImage , id }) {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate(`/blog/blogDetails/${id}`);
+    navigate(`/blog/blogDetail/${id}`);
   };
   return (
     <div  onClick={handleClick} className="flex flex-col md:flex-row gap-6 p-4 md:p-6 md:max-w-[57rem] w-full md:mx-auto mx-0 items-start rounded-lg  cursor-pointer">

@@ -14,6 +14,7 @@ export default function BlogList() {
         title="Blog & Articles"
         description="Explore our latest blogs and insights."
         placeholder="Search articles, news, or posts..."
+        page="blog"
       />
       <div className="flex flex-col xl:flex-row gap-6 mt-6 px-4">
         <div className="flex-1">

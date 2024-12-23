@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import {
   Pagination,
   PaginationContent,
@@ -7,13 +7,24 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from '@/components/ui/pagination'
+} from '../../ui/pagination';
+import { useSearch } from '../../../context/SearchContext';
 
 function RecipesList({ recipes }) {
+  const { eSearch } = useSearch('recipesPage');
+  const filteredRecipes = recipes
+    .map((category) => ({
+      ...category,
+      recipes: category.recipes.filter((recipe) =>
+        recipe.title.toLowerCase().includes(eSearch.toLowerCase())
+      ),
+    }))
+    .filter((category) => category.recipes.length > 0);
+
   return (
     <div className="flex flex-col justify-between mx-auto py-4">
-      {recipes.map((category) => (
-        <div key={category.category} className='mb-8'>
+      {filteredRecipes.map((category) => (
+        <div key={category.category} className="mb-8">
           <h2 className="text-2xl font-bold mb-4">{category.category}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {category.recipes.map((recipe) => (
@@ -51,7 +62,7 @@ function RecipesList({ recipes }) {
         </PaginationContent>
       </Pagination>
     </div>
-  )
+  );
 }
 
 RecipesList.propTypes = {
@@ -67,6 +78,6 @@ RecipesList.propTypes = {
       ).isRequired,
     })
   ).isRequired,
-}
+};
 
-export default RecipesList
+export default RecipesList;

@@ -26,7 +26,19 @@ export default withMT({
           'linear-gradient(to top, rgba(176, 176, 176, 0.4) 10%, rgba(176, 176, 176, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
         linear_blue:
           'linear-gradient(to top, rgba(30, 144, 255, 0.4) 10%, rgba(30, 144, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
-      },
+        linear_brown:
+          'linear-gradient(to top, rgba(139, 69, 19, 0.4) 10%, rgba(139, 69, 19, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+        linear_white:
+          'linear-gradient(to top, rgba(255, 255, 255, 0.4) 10%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+        linear_purple:
+          'linear-gradient(to top, rgba(128, 0, 128, 0.4) 10%, rgba(128, 0, 128, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+        linear_beige:
+          'linear-gradient(to top, rgba(245, 245, 220, 0.4) 10%, rgba(245, 245, 220, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+        linear_orange:
+          'linear-gradient(to top, rgba(255, 165, 0, 0.4) 10%, rgba(255, 165, 0, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+        linear_cyan:
+          'linear-gradient(to top, rgba(0, 255, 255, 0.4) 10%, rgba(0, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%)',
+      },      
       colors: {
         main_color: '#E7FAFE',
       },
