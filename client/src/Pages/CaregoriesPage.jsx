@@ -10,6 +10,7 @@ export default function CategoriesPage() {
         title="Categories"
         description="Browse categories and find what you love."
         placeholder="Search categories or tags..."
+        page = "categoriesPage"
       />
       <CategoryList />
     </div>
